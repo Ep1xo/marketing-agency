@@ -4,6 +4,11 @@ header{
   left: 0;
   right: 0;
 
+  z-index: 1000;
+
+  background-color: rgba(255, 255, 255, 0.35); 
+  backdrop-filter: blur(10px);
+
   text-transform: uppercase;
 
   height: 100px;
