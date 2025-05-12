@@ -1,0 +1,102 @@
+header{
+  text-transform: uppercase;
+
+  height: 100px;
+  padding: 0 45px 0 50px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  place-items: center;
+}
+
+header p{
+  margin: 0;
+}
+
+/*  ----  LEFT-SIDE   ---- */
+
+.header-left-side{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.header-left-side-logo{
+  font-weight: 600;
+  font-size: 26px;
+  color: #000000;
+
+  cursor: pointer;
+}
+
+.header-left-side-theme-switcher{
+  width: 50px;
+  height: 25px;
+  border-radius: 55px;
+  background-color: #000000;
+  overflow: hidden;
+
+  margin-left: 20px;
+
+  cursor: pointer;
+}
+
+.theme{
+  margin: 3px;
+  width: 19px;
+  height: 19px;
+  border-radius: 50%;
+  background-color: #f7f7f7;
+
+  transition: 0.5s ease-in-out;
+}
+
+.theme.light{
+  content: url(/src/assets/icons/sun.svg);
+}
+
+.header-left-side-theme-switcher:hover > .theme.light{
+  transform: rotate(45deg);
+}
+
+/*    ---- RIGHT-SIDE     */
+
+.header-right-side{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.header-right-side-menu-btn{
+  font-weight: 300;
+  font-size: 26px;
+  color: #000000;
+
+  margin: 0;
+
+  margin-right: 300px;
+
+  cursor: pointer;
+}
+
+.header-right-side-say-hello-btn{
+  font-weight: 300;
+  font-size: 26px;
+  color: #000000;
+
+  margin: 0;
+
+  cursor: pointer;
+
+  border: 1px solid #000000;
+  border-radius: 11px;
+  padding: 10px 16px 10px 16px;
+
+  transition: 0.5s ease-in-out;
+}
+
+.header-right-side-say-hello-btn:hover{
+  background-color: #e7e7e7;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
