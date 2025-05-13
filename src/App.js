@@ -2,6 +2,7 @@ import React from "react";
 import './styles/header.css';
 import './styles/fonts.css';
 import './styles/welcome-block.css';
+import './styles/about-us.css';
 import './styles/comps-styles/MenuBlock.css';
 import { MenuBlock } from "./comps/MenuBlock";
 
@@ -43,6 +44,45 @@ function App() {
             <p>work <br/> with <br/> us</p>
             <span className="welcome-block-bottom-part-right-side-arrow"></span>
           </div>
+        </div>
+      </div>
+
+      <div className="about-us-block">
+        <div className="about-us-top">
+          <h1 className="about-us-top-h1">who we are?</h1>
+          <p className="about-us-top-p">
+            <span>
+              We're not just a marketing agency - we're
+            </span> <br/> 
+            your partners in growth 
+          </p>
+        </div>
+
+        <div className="about-us-middle">
+          <div className="about-us-middle-left-side"></div>
+
+          <div className="about-us-middle-right-side">
+            <p className="about-us-middle-right-side-top-text">
+              We believed that businesses deserved more than cookie-cutter solutions – they deserved a partner who truly understood their unique challenges and aspirations.
+            </p>
+            <p className="about-us-middle-right-side-bottom-text">
+              Born from a passion for creativity and a drive to make a difference, SPARK WAY was founded by a team of seasoned professionals who saw a gap in the market. 
+            </p>
+            <div className="about-us-middle-right-side-bottom">
+
+            </div>
+          </div>
+        </div>
+
+        <div className="about-us-bottom">
+          <div className="about-us-bottom-left-side">
+            <p className="about-us-bottom-left-side-top-text">
+              <span>OUR AGENCY wanted to be</span><br/> 
+              more than just service providers
+            </p>
+            <p className="about-us-bottom-left-side-bottom-text">we wanted to be trusted advisors, guiding our clients through every step of their journey to success.</p>
+          </div>
+          <div className="about-us-bottom-right-side"></div>
         </div>
       </div>
     </>
