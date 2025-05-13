@@ -2,6 +2,8 @@ import React from "react";
 import './styles/header.css';
 import './styles/fonts.css';
 import './styles/welcome-block.css';
+import './styles/comps-styles/MenuBlock.css';
+import { MenuBlock } from "./comps/MenuBlock";
 
 function App() {
   return (
