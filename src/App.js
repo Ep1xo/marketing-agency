@@ -3,6 +3,7 @@ import './styles/header.css';
 import './styles/fonts.css';
 import './styles/welcome-block.css';
 import './styles/about-us.css';
+import './styles/strong-offer.css';
 import './styles/comps-styles/MenuBlock.css';
 import { MenuBlock } from "./comps/MenuBlock";
 
@@ -83,6 +84,23 @@ function App() {
             <p className="about-us-bottom-left-side-bottom-text">we wanted to be trusted advisors, guiding our clients through every step of their journey to success.</p>
           </div>
           <div className="about-us-bottom-right-side"></div>
+        </div>
+      </div>
+
+      <div className="strong-offer-block">
+        <h1 className="strong-offer-block-left-side">
+          We can do everything, but you don't need everything.
+        </h1>
+
+        <div className="strong-offer-block-right-side">
+          <p className="strong-offer-block-right-side-top">
+            many businesses face various problems and challenges that hinder their development and growth.
+          </p>
+
+          <p className="strong-offer-block-right-side-bottom">
+            <span>PROBLEMS:</span>
+            Insufficient visibility <br/>Low conversion rate <br/>Outdated marketing strategies <br/>Insufficient audience <br/>Low commitment and customer loyalty
+          </p>
         </div>
       </div>
     </>
