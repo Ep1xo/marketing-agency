@@ -4,6 +4,7 @@ import './styles/fonts.css';
 import './styles/welcome-block.css';
 import './styles/about-us.css';
 import './styles/strong-offer.css';
+import './styles/unic-brand.css';
 import './styles/comps-styles/MenuBlock.css';
 import { MenuBlock } from "./comps/MenuBlock";
 
@@ -101,6 +102,18 @@ function App() {
             <span>PROBLEMS:</span>
             Insufficient visibility <br/>Low conversion rate <br/>Outdated marketing strategies <br/>Insufficient audience <br/>Low commitment and customer loyalty
           </p>
+        </div>
+      </div>
+
+      <div className="unic-brand-block">
+        <p className="unic-brand-block-top">
+          <span>your brand is unique, so we will</span> <br/> walk your way together.
+        </p>
+
+        <div className="unic-brand-block-bottom">
+          <p className="unic-brand-block-bottom-top">We believe that every company has the potential to grow and develop, and our mission is to help them realize that potential.</p>
+          <p className="unic-brand-block-bottom-middle">Our agency's work methodology is focusing and solving the real marketing problems of your company.</p>
+          <p className="unic-brand-block-bottom-bottom">free consultation</p>
         </div>
       </div>
     </>
