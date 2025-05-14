@@ -5,8 +5,10 @@ import './styles/welcome-block.css';
 import './styles/about-us.css';
 import './styles/strong-offer.css';
 import './styles/unic-brand.css';
+import './styles/services.css';
 import './styles/comps-styles/MenuBlock.css';
 import { MenuBlock } from "./comps/MenuBlock";
+import { ServiceProposals } from "./comps/ServiceProposals";
 
 function App() {
   return (
@@ -114,6 +116,25 @@ function App() {
           <p className="unic-brand-block-bottom-top">We believe that every company has the potential to grow and develop, and our mission is to help them realize that potential.</p>
           <p className="unic-brand-block-bottom-middle">Our agency's work methodology is focusing and solving the real marketing problems of your company.</p>
           <p className="unic-brand-block-bottom-bottom">free consultation</p>
+        </div>
+      </div>
+
+      <div className="services-block">
+        <div className="services-block-header-part">
+          <p className="services-block-header-part-font-1">
+            improve your <br/>
+            <span>business efficiency</span>
+          </p>
+          <p className="services-block-header-part-font-2">
+            with our services
+          </p>
+        </div>
+
+        <div className="services-block-grid">
+          <ServiceProposals name="Strategy" description="We determine the brand's place in the market, how it will develop, and most importantly, who will be its target audience. " />
+          <ServiceProposals name="Communications and advertising" description="A strong brand should attract attention. Creatives, messages and channels of communication with the consumer." />
+          <ServiceProposals name="Branding" description="We determine the brand's place in the market, how it will develop, and most importantly, who will be its target audience. " />
+          <ServiceProposals name="Production" description="The key to a successful production is primarily responsible production work. We can assemble a team for a task of any complexity and coordinate the project." />
         </div>
       </div>
     </>
