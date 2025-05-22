@@ -6,6 +6,7 @@ import './styles/about-us.css';
 import './styles/strong-offer.css';
 import './styles/unic-brand.css';
 import './styles/services.css';
+import './styles/latest-projects.css';
 import './styles/comps-styles/MenuBlock.css';
 import { MenuBlock } from "./comps/MenuBlock";
 import { ServiceProposals } from "./comps/ServiceProposals";
@@ -135,6 +136,61 @@ function App() {
           <ServiceProposals name="Communications and advertising" description="A strong brand should attract attention. Creatives, messages and channels of communication with the consumer." />
           <ServiceProposals name="Branding" description="We determine the brand's place in the market, how it will develop, and most importantly, who will be its target audience. " />
           <ServiceProposals name="Production" description="The key to a successful production is primarily responsible production work. We can assemble a team for a task of any complexity and coordinate the project." />
+        </div>
+      </div>
+
+      <div className="latest-projects">
+        <div>
+          <p>ready to see your <br/> project featured here?</p>
+          <div className="latest-projects-top-container">
+            <div className="latest-projects-top-container">
+              <p className="latest-projects-top-container-btn">contact us</p>
+              <p className="latest-projects-top-container-arrow"></p>
+
+              <p className="latest-projects-top-container-naming">
+                latest
+                <span>projects</span>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div className="latest-projects-bottom">
+          <div className="project-1">
+            <p className="project-name-1">Branding, Production, Strategy</p>
+            <div className="project-image-container-1">
+              <p className="project-image-container-image-1"></p>
+              <p className="project-image-container-btn-1">learn more</p>
+            </div>
+            <p className="project-description-1">here will be the name of the project</p>
+          </div>
+
+          <div className="project-2">
+            <p className="project-name-2">Strategy, Branding</p>
+            <div className="project-image-container-2">
+              <p className="project-image-container-image-2"></p>
+              <p className="project-image-container-btn-2">learn more</p>
+            </div>
+            <p className="project-description-2">here will be the name of the project</p>
+          </div>
+
+          <div className="project-3">
+            <p className="project-name-3">Pre-Production, Strategy</p>
+            <div className="project-image-container-3">
+              <p className="project-image-container-image-3"></p>
+              <p className="project-image-container-btn-3">learn more</p>
+            </div>
+            <p className="project-description-3">here will be the name of the project</p>
+          </div>
+
+          <div className="project-4">
+            <p className="project-name-4">Branding</p>
+            <div className="project-image-container-4">
+              <p className="project-image-container-image-4"></p>
+              <p className="project-image-container-btn-4">learn more</p>
+            </div>
+            <p className="project-description-4">here will be the name of the project</p>
+          </div>
         </div>
       </div>
     </>
