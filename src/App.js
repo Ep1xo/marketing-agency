@@ -10,7 +10,9 @@ import './styles/latest-projects.css';
 import './styles/contact-us.css';
 import './styles/footer.css';
 import './styles/comps-styles/MenuBlock.css';
+import './styles/comps-styles/FreeConsultation.css';
 import MenuBlock from "./comps/MenuBlock";
+import FreeConsultation from "./comps/FreeConsultation";
 import { ServiceProposals } from "./comps/ServiceProposals";
 
 function App() {
@@ -29,6 +31,8 @@ function App() {
           <p className="header-right-side-say-hello-btn">say hello</p>
         </div>
       </header>
+
+      <FreeConsultation/>
 
       <div className="welcome-block">
         <div className="welcome-block-top-part">

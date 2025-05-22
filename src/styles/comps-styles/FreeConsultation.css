@@ -1,0 +1,89 @@
+.consultation-popup-background{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1001;
+  background-color: #cacacac2;
+}
+
+.consultation-popup{
+  display: grid;
+  grid-template-columns: 50% 50%;
+
+  position: fixed;
+  top: 20%;
+  left: 8%;
+  right: 8%;
+  bottom: 0;
+  z-index: 1001;
+  background-color: #ffffff;
+
+  border-radius: 25px 25px 0 0;
+  
+  padding: 50px 70px 50px 70px;
+}
+
+.consultation-popup-left-side{
+  display: flex;
+  flex-direction: column;
+
+  position: relative;
+}
+
+.consultation-popup-left-side-upper{
+  position: absolute;
+  top: 0;
+
+  font-weight: 600;
+  font-size: 40px;
+  text-transform: uppercase;
+}
+
+.consultation-popup-left-side-upper span{
+  display: block;
+  font-size: 60px;
+}
+
+.consultation-popup-left-side-bottom{
+  position: absolute;
+  bottom: 0;
+
+  font-weight: 600;
+  font-size: 50px;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.consultation-popup-left-side-bottom span{
+  content: url('/src/assets/icons/conact-us-decor.svg');
+  transform: scale(0.8);
+
+  position: absolute;
+  bottom: 0;
+  right: -150px;
+}
+
+.consultation-popup-right-side{
+  display: flex;
+  flex-direction: column;
+
+  margin-top: 80px;
+  margin-left: 30px;
+}
+
+.consultation-popup-right-side input{
+  background-color: transparent;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #000000;
+
+  margin-bottom: 40px;
+
+  font-family: 'Unbounded';
+  font-size: 16px;
+  font-weight: 300;
+
+  padding-bottom: 20px;
+}
