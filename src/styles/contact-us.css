@@ -1,0 +1,117 @@
+.contact-us-block{
+  background-color: #D9D9D9;
+
+  display: flex;
+  flex-direction: column;
+
+  padding-right: 30px;
+  padding-left: 50px;
+  padding-bottom: 80px;
+}
+
+.contact-us-block-top-part{
+  font-weight: 600;
+  font-size: 50px;
+
+  text-transform: uppercase;
+
+  margin-top: 60px;
+}
+
+.contact-us-block-top-part span{
+  display: block;
+
+  margin-left: 290px;
+}
+
+/*  ---BOTTOM-PART--- */
+
+.contact-us-block-bottom-part{
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+.contact-us-block-bottom-part-left-side{
+  position: relative;
+
+  margin-top: 70px;
+}
+
+.contact-us-block-bottom-part-left-side-p1{
+  font-weight: 900;
+  font-size: 120px;
+
+  text-transform: uppercase;
+
+  margin: 0;
+}
+
+.contact-us-block-bottom-part-left-side-p1 span{
+  color: transparent;
+  -webkit-text-stroke: 0.1px black;
+}
+
+.contact-us-block-bottom-part-left-side-p2{
+  position: absolute;
+  bottom: 0;
+  right: 120px;
+
+  font-weight: 600;
+  font-size: 25px;
+  text-transform: uppercase;
+}
+
+.contact-us-block-bottom-part-left-side-p2 span{
+  position: absolute;
+  bottom: -5px;
+  right: -120px;
+  content: url('/src/assets/icons/conact-us-decor.svg');
+  transform: scale(0.8);
+}
+
+.contact-us-block-bottom-part-right-side{
+  display: flex;
+  flex-direction: column;
+
+  margin-left: 100px;
+  margin-right: 150px;
+  margin-top: 40px;
+}
+
+.contact-us-block-bottom-part-right-side input{
+  background-color: transparent;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #000000;
+
+  margin-bottom: 40px;
+
+  font-family: 'Unbounded';
+  font-size: 16px;
+  font-weight: 300;
+
+  padding-bottom: 20px;
+}
+
+.contact-us-block-bottom-part-right-side p{
+  align-self: flex-end; 
+  display: inline-block; 
+
+  font-weight: 600;
+  font-size: 30px;
+  text-transform: uppercase;
+
+  padding: 8px 20px; 
+  margin: 15px 0 0 auto; 
+
+  border-radius: 25px;
+  background-color: transparent;
+
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+}
+
+.contact-us-block-bottom-part-right-side p:hover{
+  background-color: #e7e7e7;
+  box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.2);
+}

@@ -7,6 +7,7 @@ import './styles/strong-offer.css';
 import './styles/unic-brand.css';
 import './styles/services.css';
 import './styles/latest-projects.css';
+import './styles/contact-us.css';
 import './styles/comps-styles/MenuBlock.css';
 import { MenuBlock } from "./comps/MenuBlock";
 import { ServiceProposals } from "./comps/ServiceProposals";
@@ -190,6 +191,34 @@ function App() {
               <p className="project-image-container-btn-4">learn more</p>
             </div>
             <p className="project-description-4">here will be the name of the project</p>
+          </div>
+        </div>
+      </div>
+
+      <div className="contact-us-block">
+        <p className="contact-us-block-top-part">
+          <span>Ready to take the next step </span>
+          and change 
+          <span> your buisness?</span>
+        </p>
+
+        <div className="contact-us-block-bottom-part">
+          <div className="contact-us-block-bottom-part-left-side">
+            <p className="contact-us-block-bottom-part-left-side-p1">
+              contact
+              <span> us</span>
+            </p>
+            <p className="contact-us-block-bottom-part-left-side-p2">
+              submit the form
+              <span></span>
+            </p>
+          </div>
+
+          <div className="contact-us-block-bottom-part-right-side">
+            <input type="text" name="userName" placeholder="NAME" required></input>
+            <input type="text" name="userEmail" placeholder="E-MAIL" required></input>
+            <input type="text" name="userDetails" placeholder="DETAILS" required></input>
+            <p>send</p>
           </div>
         </div>
       </div>
