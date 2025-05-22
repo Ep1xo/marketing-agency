@@ -1,4 +1,5 @@
-import React from "react";
+import { React, useState } from "react";
+import axios from "axios";
 import './styles/header.css';
 import './styles/fonts.css';
 import './styles/welcome-block.css';
@@ -16,6 +17,28 @@ import FreeConsultation from "./comps/FreeConsultation";
 import { ServiceProposals } from "./comps/ServiceProposals";
 
 function App() {
+
+  const [name, setName] = useState('');
+  const [mail, setMail] = useState('');
+  const [details, setDetails] = useState('');
+
+  const handleSubmit = (e) => {
+  e.preventDefault();
+  const data = {
+    Name: name,
+    Email: mail,
+    Details: details
+  }
+
+  axios.post('https://api.sheetbest.com/sheets/467c9001-3790-4f9d-b510-3efa18d3b729', data)
+    .then((response) => {
+      console.log(response);
+      setName('');
+      setMail('');
+      setDetails('');
+    })
+  }
+
   return (
     <>
       <header>
@@ -217,12 +240,15 @@ function App() {
             </p>
           </div>
 
-          <div className="contact-us-block-bottom-part-right-side">
-            <input type="text" name="userName" placeholder="NAME" required></input>
-            <input type="text" name="userEmail" placeholder="E-MAIL" required></input>
-            <input type="text" name="userDetails" placeholder="DETAILS" required></input>
-            <p>send</p>
-          </div>
+          <form className="contact-us-block-bottom-part-right-side" onSubmit={handleSubmit}>
+            <input type="text" name="Name" placeholder="NAME" required
+              onChange={(e) => setName(e.target.value)} value={name}/>
+            <input type="text" name="Email" placeholder="E-MAIL" required
+              onChange={(e) => setMail(e.target.value)} value={mail}/>
+            <input type="text" name="Details" placeholder="DETAILS" required
+              onChange={(e) => setDetails(e.target.value)} value={details}/>
+            <button>send</button>
+          </form>
         </div>
       </div>
 

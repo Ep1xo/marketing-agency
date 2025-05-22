@@ -93,7 +93,7 @@
   padding-bottom: 20px;
 }
 
-.contact-us-block-bottom-part-right-side p{
+.contact-us-block-bottom-part-right-side button{
   align-self: flex-end; 
   display: inline-block; 
 
@@ -104,6 +104,7 @@
   padding: 8px 20px; 
   margin: 15px 0 0 auto; 
 
+  border: none;
   border-radius: 25px;
   background-color: transparent;
 
@@ -111,7 +112,7 @@
   transition: 0.5s ease-in-out;
 }
 
-.contact-us-block-bottom-part-right-side p:hover{
+.contact-us-block-bottom-part-right-side button:hover{
   background-color: #e7e7e7;
   box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.2);
 }
