@@ -8,6 +8,7 @@ import './styles/unic-brand.css';
 import './styles/services.css';
 import './styles/latest-projects.css';
 import './styles/contact-us.css';
+import './styles/footer.css';
 import './styles/comps-styles/MenuBlock.css';
 import { MenuBlock } from "./comps/MenuBlock";
 import { ServiceProposals } from "./comps/ServiceProposals";
@@ -220,6 +221,40 @@ function App() {
             <input type="text" name="userDetails" placeholder="DETAILS" required></input>
             <p>send</p>
           </div>
+        </div>
+      </div>
+
+      <div className="footer-block">
+        <div className="footer-block-top">
+          <p className="footer-block-top-left-side">logo agency</p>
+          <div className="footer-block-top-right-side">
+            <p className="footer-block-top-right-side-1">about us</p>
+            <p className="footer-block-top-right-side-2">our team</p>
+            <p className="footer-block-top-right-side-3">cases</p>
+            <p className="footer-block-top-right-side-1">faq</p>
+          </div>
+        </div>
+
+        <div className="footer-block-middle">
+          <p className="footer-block-middle-contacts"><span>Phone: </span>+380505631697</p>
+          <p className="footer-block-middle-contacts"><span>E-mail: </span>sparkway_ma@gmail.com</p>
+          <p className="footer-block-middle-contacts"><span>Adress: </span>69041, Kyiv, Nezalezhnaya st.</p>
+          <span className="footer-block-middle-contacts-icon-1"></span> 
+          <span className="footer-block-middle-contacts-icon-2"></span> 
+          <span className="footer-block-middle-contacts-icon-3"></span> 
+          <span className="footer-block-middle-contacts-icon-4"></span>
+        </div>
+
+        <div className="footer-block-bottom">
+          <div className="footer-block-bottom-left-side">
+            <p>2024. All rights reserved.</p>
+            <p>Privacy policy.</p>
+            <p>Terms and conditions</p>
+          </div>
+
+          <p className="footer-block-bottom-right-side">
+            design by <span>KSENIA ZBOROVSKA</span>
+          </p>
         </div>
       </div>
     </>
