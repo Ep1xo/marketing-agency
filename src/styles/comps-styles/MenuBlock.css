@@ -5,8 +5,74 @@
   bottom: 0;
   right: 0;
 
+  z-index: 1001;
+
   background-image: url('../../assets/icons/white-arrow.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+
+  display: grid;
+  grid-template-columns: 50% 50%;
+
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.wrapper-left-side{
+  font-weight: 600;
+  font-size: 45px;
+
+  text-transform: uppercase;
+  color: white;
+
+  margin-top: auto;
+  margin-bottom: 150px;
+  margin-left: 150px;
+}
+
+.wrapper-left-side span{
+  display: block;
+  font-size: 65px;
+}
+
+.wrapper-right-side{
+  color: white;
+
+  margin: auto;
+}
+
+.wrapper-right-close-btn{
+  display: flex;
+  justify-content: end;
+
+  font-weight: 300;
+  font-size: 27px;
+  margin-top: -20px;
+
+  cursor: pointer;
+  transition: 0.5s ease;
+}
+
+.wrapper-right-side-topics{
+  display: inline-block;
+
+  font-size: 90px;
+  font-weight: 300;
+  text-transform: uppercase;
+  margin: 0;
+  margin-left: 50px;
+  margin-bottom: 20px;
+
+  border-bottom: 1px solid #FFFFFF;
+  border-radius: 25px 25px 0 0;
+  padding: 0 20px 0 20px;
+
+  cursor: pointer;
+  transition: 0.5s ease;
+}
+
+.wrapper-right-side-topics:hover{
+  background-color: #1b1b1b;
+  box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.2);
 }
