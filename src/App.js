@@ -32,8 +32,6 @@ function App() {
         </div>
       </header>
 
-      <FreeConsultation/>
-
       <div className="welcome-block">
         <div className="welcome-block-top-part">
           <p className="welcome-block-top-part-font-1">SPARK WAY MARKETING</p>
