@@ -48,12 +48,21 @@
 
 .consultation-popup-left-side-bottom{
   position: absolute;
-  bottom: 0;
+  bottom: 60px;
+  left: 70px;
+
+  background-color: transparent;
+  border: none;
+  font-family: 'Unbounded';
 
   font-weight: 600;
   font-size: 50px;
   text-transform: uppercase;
   margin: 0;
+
+  user-select: none;  
+
+  cursor: pointer;
 }
 
 .consultation-popup-left-side-bottom span{

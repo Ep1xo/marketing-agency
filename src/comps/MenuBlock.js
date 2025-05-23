@@ -1,6 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 
-const MenuBlock = () => {
+const MenuBlock = ({ isOpen, onClose }) => {
+  if (!isOpen) return null;
+
+
   return (
     <div className="wrapper">
       <p className="wrapper-left-side">
@@ -8,7 +11,7 @@ const MenuBlock = () => {
       </p>
 
       <div className="wrapper-right-side">
-        <p className="wrapper-right-close-btn">CLOSE</p>
+        <p className="wrapper-right-close-btn" onClick={onClose}>CLOSE</p>
         <p className="wrapper-right-side-topics">about</p>
         <p className="wrapper-right-side-topics">cases</p>
         <p className="wrapper-right-side-topics">contacts</p>

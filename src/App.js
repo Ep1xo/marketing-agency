@@ -39,6 +39,26 @@ function App() {
     })
   }
 
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const openMenu = () => {
+    setIsMenuOpen(true);
+  };
+
+  const closeMenu = () => {
+    setIsMenuOpen(false);
+  };
+
+  const [isConsultation, setIsConsultation] = useState(false);
+
+  const openConsultation = () => {
+    setIsConsultation(true);
+  };
+
+  const closeConsultation = () => {
+    setIsConsultation(false);
+  };
+
   return (
     <>
       <header>
@@ -50,10 +70,12 @@ function App() {
         </div>
 
         <div className="header-right-side">
-          <p className="header-right-side-menu-btn">menu</p>
+          <p className="header-right-side-menu-btn" onClick={openMenu}>menu</p>
           <p className="header-right-side-say-hello-btn">say hello</p>
         </div>
       </header>
+
+      <MenuBlock isOpen={isMenuOpen} onClose={closeMenu} />
 
       <div className="welcome-block">
         <div className="welcome-block-top-part">
@@ -143,9 +165,11 @@ function App() {
         <div className="unic-brand-block-bottom">
           <p className="unic-brand-block-bottom-top">We believe that every company has the potential to grow and develop, and our mission is to help them realize that potential.</p>
           <p className="unic-brand-block-bottom-middle">Our agency's work methodology is focusing and solving the real marketing problems of your company.</p>
-          <p className="unic-brand-block-bottom-bottom">free consultation</p>
+          <p className="unic-brand-block-bottom-bottom" onClick={openConsultation}>free consultation</p>
         </div>
       </div>
+
+      <FreeConsultation isOpen={isConsultation} onClose={closeConsultation}/>
 
       <div className="services-block">
         <div className="services-block-header-part">
