@@ -71,7 +71,7 @@ function App() {
 
         <div className="header-right-side">
           <p className="header-right-side-menu-btn" onClick={openMenu}>menu</p>
-          <p className="header-right-side-say-hello-btn">say hello</p>
+          <p className="header-right-side-say-hello-btn"  onClick={openConsultation}>say hello</p>
         </div>
       </header>
 
@@ -94,7 +94,7 @@ function App() {
             </p>
           </div>
 
-          <div className="welcome-block-bottom-part-right-side">
+          <div className="welcome-block-bottom-part-right-side"  onClick={openConsultation}>
             <p>work <br/> with <br/> us</p>
             <span className="welcome-block-bottom-part-right-side-arrow"></span>
           </div>
@@ -195,8 +195,8 @@ function App() {
           <p>ready to see your <br/> project featured here?</p>
           <div className="latest-projects-top-container">
             <div className="latest-projects-top-container">
-              <p className="latest-projects-top-container-btn">contact us</p>
-              <p className="latest-projects-top-container-arrow"></p>
+              <p className="latest-projects-top-container-btn"  onClick={openConsultation}>contact us</p>
+              <p className="latest-projects-top-container-arrow"  onClick={openConsultation}></p>
 
               <p className="latest-projects-top-container-naming">
                 latest
